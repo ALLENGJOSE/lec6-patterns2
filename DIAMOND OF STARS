@@ -1,0 +1,42 @@
+  int firsthalf = (n+1/2);
+        int secondhalf = (n/2);
+        
+        //firsthalf
+        int currRow = 1;
+        
+        while(currRow<= firsthalf){
+            int spaces = 1;
+            while (spaces <= (firsthalf - currRow)){
+            System.out.print(" ");
+            spaces++;
+        }
+        int currcol= 1;
+        while(currcol <= (2*currRow )- 1){
+            System.out.print("*");
+            currcol++;
+        }
+        System.out.println();
+        currRow++;    
+    }
+    
+    //secondhalf
+    currRow = secondhalf;
+    
+    while (currRow >= 1){
+        int spaces = 1;
+        while(spaces <= (secondhalf - currRow + 1)){
+            System.out.print(" ");
+            spaces++;
+        }
+        
+        int  currcol = 1;
+        while(currcol <= (2*currRow) - 1){
+            System.out.print("*");
+            currcol++;
+        }
+        
+        System.out.println();
+        currRow--;
+    }
+    }
+}
